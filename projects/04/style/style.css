@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c4cce;
+  letter-spacing: 0.5px;
+  font-family: "Tilt Neon", cursive;
+}
+a {
+  text-decoration: none;
+}
+h1 span {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  position: relative;
+  top: -13px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+.tables {
+  display: flex;
+  text-align: center;
+}
+.table {
+  background-color: #ffff;
+  margin: 1rem 1rem;
+  border-radius: 22px;
+  min-width: 18vw;
+  box-shadow: -1px -1px 10px 1px blue;
+}
+.lavel {
+  padding: 15px 15px;
+  border-radius: 20px 20px 0 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+.beginner .lavel {
+  background-color: #81c241;
+}
+.standart .lavel {
+  background-color: #41bac2;
+}
+.professional .lavel {
+  background-color: #4163c2;
+}
+.ultimate .lavel {
+  background-color: #6341c2;
+}
+.main {
+}
+li:nth-child(odd) {
+  background-color: #f2ffe6;
+}
+li {
+  list-style-type: none;
+  color: #032f87;
+  padding: 15px;
+}
+li h1 {
+  color: #333333;
+}
+.button a {
+  font-size: 1.2rem;
+  display: block;
+  background-color: #fece14;
+  color: #222222;
+  padding: 15px 0;
+  border-radius: 0 0 20px 20px;
+  text-transform: uppercase;
+}
+.button a:hover {
+  background-color: #81c241;
+}
+
+@media screen and (max-width: 1024px) {
+  .tables {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 2;
+    margin-bottom: 25px;
+  }
+} ;

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  padding: 15px 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  flex-wrap: wrap;
+}
+.container .section:nth-child(odd) {
+  /* border: 1px solid red; */
+  border-radius: 20px;
+  width: 20rem;
+  height: 28rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 5px #ededed;
+}
+.container .best-dial {
+  margin: 0 2rem;
+  /* border: 1px solid green; */
+  border-radius: 20px;
+  width: 20rem;
+  height: 33rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 5px #ededed;
+}
+.section {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5rem 0;
+  position: relative;
+}
+
+.section div:nth-of-type(1) h1 {
+  color: #ff7070;
+}
+.section div:nth-of-type(2) h1 {
+  color: #2195f3;
+  font-size: 75px;
+  margin-bottom: 20px;
+}
+.section div:nth-of-type(2) span {
+  font-size: 18px;
+  position: relative;
+  bottom: -12px;
+}
+.service {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service div {
+  margin-bottom: 10px;
+}
+.img {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}
+.text {
+  color: #ff7070;
+  font-weight: 800;
+}
+.line {
+  border-bottom: 2px solid #ededed;
+  width: 80%;
+}
+.section button {
+  border: 0;
+  background-color: #2195f3;
+  color: #fefefe;
+  padding: 15px 70px;
+  border-radius: 10px;
+}
+.section button:hover,
+.section button:active {
+  background-color: blue;
+  cursor: pointer;
+}
+.best-dial::after {
+  content: "Best dial";
+  font-weight: 600;
+  padding: 3px 30px;
+  letter-spacing: 1px;
+  font-size: 11px;
+  position: absolute;
+  top: 17px;
+  right: -18px;
+  clip-path: polygon(22% 0, 86.3% 0, 99.5% 100%, 0% 100%);
+  background-color: #2195f3;
+  color: #fafafa;
+  transform: rotate(38deg);
+}
