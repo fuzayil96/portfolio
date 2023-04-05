@@ -396,6 +396,9 @@ body {
   .projects {
     justify-content: space-around;
   }
+  .projects div{
+    margin: 0;
+  }
 }
 
 /* CONTACT SECTION */
