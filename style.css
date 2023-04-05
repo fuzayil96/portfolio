@@ -33,12 +33,14 @@ body {
   background-color: white;
   top: 35px;
   left: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
   visibility: hidden;
+  z-index: 1;
+  transition: all 1s;
 }
 .active{
   visibility:visible;
