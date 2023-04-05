@@ -575,3 +575,15 @@ footer {
   color: #0e7ae6;
   font-weight: 700;
 }
+@media screen and (max-width: 900px){
+  .f-menu, 
+  .main .logo,
+  .main .contact
+  {
+    display: none;
+  }
+  .f-container .main{
+    display: flex;
+    flex-direction: column;
+  }
+}
