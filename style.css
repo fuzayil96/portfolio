@@ -133,6 +133,11 @@ body {
 .cv-img img {
   max-width: 28rem;
 }
+@media screen and (max-width: 900px){
+  .cv-img{
+    display: none;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .cv-img img {
     width: 20rem;
@@ -195,6 +200,18 @@ body {
   color: antiquewhite;
 }
 
+@media screen and (max-width: 900px){
+  .about-me{
+    flex-wrap: wrap;
+  }
+  .about-me-text{
+    margin-top: 50px;
+    width: 100%;
+  }
+  .about-me-text p{
+    text-align: justify;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .about-me-text h1 {
     font-size: 2rem;
@@ -351,6 +368,19 @@ body {
   object-fit: contain;
   transition: all 0.3s;
 }
+
+@media screen and (max-width: 900px){
+  .projects{
+    flex-direction: column;
+  }
+  .projects div {
+    width: 100%;
+  }
+  .projects div a img{
+    object-fit: cover;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .title h1 {
     font-size: 2rem;
@@ -453,7 +483,24 @@ body {
   transition: all 0.5s;
   color: antiquewhite;
 }
-
+@media screen and (max-width: 900px){
+  .mail-img{
+    display: none;
+  }
+  .contact-title p{
+    width: 100%;
+  }
+  .mail-form{
+   
+    margin: auto;
+  }
+    .mail-form form{
+      margin: 0;
+    }
+  .mail-form form button {
+    margin: 15px auto;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .contact-title h1 {
     font-size: 2rem;
@@ -464,9 +511,9 @@ body {
   .mail-img img {
     width: 20rem;
   }
-  .mail-form {
-    width: 35vw;
-  }
+  /* .mail-form {
+    width: 35%;
+  } */
   .mail-form form input {
     height: 2rem;
   }
