@@ -216,6 +216,9 @@ body {
   .about-me-text p{
     text-align: justify;
   }
+  .about-me-img{
+    margin-top: 55px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .about-me-text h1 {
