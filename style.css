@@ -40,7 +40,6 @@ body {
   justify-content: center;
   visibility: hidden;
   z-index: 1;
-  transition: all 1s;
 }
 .active{
   visibility:visible;
