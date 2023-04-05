@@ -38,9 +38,10 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  visibility: hidden;
 }
 .active{
-  visibility: hidden;
+  visibility:visible;
 }
 .menu-hidden ul {
   display: flex;
